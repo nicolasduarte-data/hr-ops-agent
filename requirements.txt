@@ -1,0 +1,21 @@
+anthropic>=0.40.0
+streamlit>=1.40.0
+python-dotenv>=1.0.0
+pydantic>=2.9.0
+httpx>=0.27.0
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+
+# Observability. Optional — agent runs without tracing.
+# Set LANGFUSE_PUBLIC_KEY + LANGFUSE_SECRET_KEY in .env to activate.
+# Free cloud tier: https://langfuse.com
+langfuse>=2.0.0,<3.0.0
+
+# Retrieval stack (BGE-M3 hybrid + ChromaDB). REQUIRED for the live
+# Space to run real semantic retrieval. Without these, src/retrieval imports
+# ImportError and tools.py silently degrades to keyword search over the 5
+# original docs — contradicting the README's BGE-M3 metrics. Mirrors pyproject.toml.
+# Note: flagembedding pulls torch (~CPU build), so the Space image build is heavy.
+flagembedding>=1.2.0
+chromadb>=0.5.0
+rank-bm25>=0.2.2

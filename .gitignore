@@ -1,0 +1,38 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Secrets — never commit
+.env
+
+# Type / test caches
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Vector index — rebuilt at startup, never commit
+*.index
+chroma_db/
+faiss_index/
+data/retrieval_index/
+
+# Screenshots — referenced by absolute GitHub raw URL, not stored in the repo
+docs/screenshots/
+
+# Local-only planning & strategy docs (kept on disk, never published)
+CLAUDE.md
+BACKLOG.md
+backlog/
+REQUIREMENTS_VALIDATION.md
+docs/interview-prep.md
+
+# OS
+.DS_Store
+Thumbs.db

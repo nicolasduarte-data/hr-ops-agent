@@ -1,0 +1,25 @@
+{
+  "git_commit": "b410e7b",
+  "model": "claude-sonnet-4-6",
+  "run_ts": "2026-06-03T13:03:16.833678+00:00",
+  "k": 1,
+  "dry_run": false,
+  "total_queries": 150,
+  "pass_at_k_count": 66,
+  "overall_pass_at_k": 0.8049,
+  "per_tool_accuracy": {
+    "search_process_docs": 0.8333,
+    "lookup_known_issues": 0.6333,
+    "get_it_scope": 1.0
+  },
+  "failure_breakdown": {
+    "none": 66,
+    "answer_mismatch": 16
+  },
+  "traces_path": "eval/results/run-20260603-130316/traces.jsonl",
+  "summary_path": "eval/results/run-20260603-130316/summary.csv",
+  "rescore_ts": "2026-06-03T13:27:37.088752+00:00",
+  "rescore_note": "Re-scored with fixed evaluator: subsequence sequence check + token-split args matching. Rate-limit errors excluded from totals. Args check uses tools_called only (no args data in traces).",
+  "total_queries_scored": 82,
+  "rate_limit_errors_excluded": 68
+}

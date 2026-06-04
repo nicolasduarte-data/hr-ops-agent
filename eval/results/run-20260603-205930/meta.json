@@ -1,0 +1,32 @@
+{
+  "git_commit": "c9fbb69",
+  "model": "claude-sonnet-4-6",
+  "run_ts": "2026-06-03T20:59:30.998918+00:00",
+  "k": 1,
+  "dry_run": false,
+  "total_queries": 30,
+  "pass_at_k_count": 27,
+  "overall_pass_at_k": 0.9,
+  "routing_at_k_count": 30,
+  "overall_routing_at_k": 1.0,
+  "per_tool_routing": {
+    "lookup_known_issues": 1.0
+  },
+  "per_tool_full_pass": {
+    "lookup_known_issues": 0.9
+  },
+  "failure_breakdown": {
+    "none": 27,
+    "answer_mismatch": 2,
+    "tool_misuse": 1
+  },
+  "coverage": {
+    "scored": 30,
+    "errored_queries": 0,
+    "categories_run": [
+      "lki"
+    ]
+  },
+  "traces_path": "eval/results/run-20260603-205930/traces.jsonl",
+  "summary_path": "eval/results/run-20260603-205930/summary.csv"
+}
